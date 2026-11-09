@@ -25,7 +25,7 @@ jobs:
           sudo apt-get install -y live-build debootstrap squashfs-tools xorriso grub-pc-bin grub-efi-amd64-bin mtools dosfstools
       - name: Configure live system
         run: |
-          chmod +x auto/config
+          chmod +x auto/config config/hooks/live/*.hook.chroot
           sudo lb config
       - name: Build GlassOS live ISO
         run: sudo lb build
