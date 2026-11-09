@@ -7,6 +7,7 @@ lb config noauto \
   --distribution trixie \
   --architectures amd64 \
   --binary-images iso-hybrid \
+  --initsystem systemd \
   --debian-installer none \
   --archive-areas "main contrib non-free non-free-firmware" \
   --mirror-bootstrap https://deb.debian.org/debian \
