@@ -2,11 +2,17 @@
 set -e
 
 lb config noauto \
+  --mode debian \
+  --ignore-system-defaults \
   --distribution trixie \
   --architectures amd64 \
   --binary-images iso-hybrid \
   --debian-installer none \
   --archive-areas "main contrib non-free non-free-firmware" \
+  --mirror-bootstrap https://deb.debian.org/debian \
+  --mirror-chroot https://deb.debian.org/debian \
+  --mirror-binary https://deb.debian.org/debian \
+  --mirror-chroot-security https://security.debian.org/debian-security \
   --apt-recommends true \
   --bootappend-live "boot=live components quiet splash" \
   --iso-application "GlassOS" \
