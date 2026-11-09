@@ -1,0 +1,34 @@
+# Plasma desktop
+kde-plasma-desktop
+sddm
+konsole
+dolphin
+systemsettings
+
+# GlassOS visual experience
+plymouth
+plymouth-themes
+cairo-dock
+cairo-dock-plug-ins
+papirus-icon-theme
+breeze
+breeze-gtk-theme
+fonts-noto
+fonts-noto-color-emoji
+
+# Browser and applications
+firefox-esr
+thunderbird
+libreoffice
+gimp
+krita
+vlc
+ark
+kate
+okular
+spectacle
+network-manager
+sudo
+curl
+wget
+htop
